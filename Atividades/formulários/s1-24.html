@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="icon" href="https://kenzie.com.br/favicon.jpeg">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Formulário de Cadastro</h1>
+        </div>
+    </header>
+        <form>
+            <main>
+                <div>
+                    <label for="nome"><strong>Nome</strong></label><br>
+                    <input 
+                    type="text" 
+                    placeholder="Digite seu nome aqui..." 
+                    required="true" 
+                    name="nome" 
+                    id="nome">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="email"><strong>Email</strong></label><br>
+                    <input 
+                    type="email" 
+                    placeholder="Digite seu e-mail aqui..." 
+                    required="true" 
+                    name="email" 
+                    id="email">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="descricao"><strong>Descrição</strong></label><br>
+                    <textarea 
+                    name="descricao" 
+                    id="descricao" 
+                    cols="40" 
+                    rows="10" 
+                    placeholder="Descreva o que o motivou a participar do evento...">
+                    </textarea>
+                    <br><br>
+                </div>
+                <div>
+                    <label for="modulo"><strong> Qual módulo você está atualmente ?</strong></label><br>
+                    <select name="modulo" id="modulo" required="true">
+                        <option value="">
+                            Escolha seu módulo
+                        </option>
+                        <option value="m1">
+                            MÓDULO 1
+                        </option>
+                        <option value="m2">
+                            MÓDULO 2
+                        </option>
+                        <option value="m3">
+                            MÓDULO 3
+                        </option>
+                        <option value="m4">
+                            MÓDULO 4
+                        </option>
+                        <option value="m5">
+                            MÓDULO 5
+                        </option>
+                    </select><br><br>
+                </div>
+                <div>
+                    <label for="senha"><strong>Cadastre sua senha</strong></label><br>
+                    <input 
+                    type="password" 
+                    required="true" 
+                    name="senha" 
+                    id="senha" 
+                    placeholder="Insira sua senha">
+                    <br><br>
+                </div>
+                <div>
+                    <label for="senhaconf"><strong>Confirmar senha</strong></label><br>
+                    <input 
+                    type="password" 
+                    required="true" 
+                    name="senhaconf" 
+                    id="senhaconf" 
+                    placeholder="Insira sua senha novamente">
+                    <br><br>
+                </div>
+                <div>
+                    <p><strong>Você gostaria de receber novidades sobre a Kenzie em seu e-mail ?</strong></p>
+                    <label for="sim"> 
+                        SIM
+                        <input 
+                        type="radio" 
+                        id="sim" 
+                        name="novidades" 
+                        required="true" 
+                        value="sim">
+                    </label>
+                    <label for="nao"> 
+                        NÃO
+                        <input 
+                        type="radio" 
+                        id="nao" 
+                        name="novidades" 
+                        required="true" 
+                        value="nao">
+                    </label><br><br>
+                </div>
+            </main>
+        <footer>
+            <div>
+                <button type="submit">Enviar cadastro</button>
+            </div>
+        </footer>    
+        </form>
+</body>
+</html>
